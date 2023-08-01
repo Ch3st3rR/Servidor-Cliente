@@ -23,7 +23,7 @@ function login(req, res, next) {
 // LOGIN
 app.get("/login", (req, res) => {
   const { login, senha } = req.query
-  if (login == "daniel" && senha == "123123") {
+  if (login == "user" && senha == "012345") {
     const hash = crypto.randomBytes(20).toString('hex')
     loginTokens.push(hash)
     res.json({ error: false, token: hash })
