@@ -95,3 +95,5 @@ app.delete("/movies", login, async (req, res) => {
 })
 
 app.listen(3000, () => console.log("Servidor rodando!"))
+
+
